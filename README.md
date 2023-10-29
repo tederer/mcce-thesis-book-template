@@ -1,5 +1,5 @@
 # mcce-thesis-book-template
-This project is a template for the MCCE thesis book. You can produce the PDF by using Visual Studio Code or [Overleaf](https://www.overleaf.com). 
+This project is a template for the MCCE thesis book. You can produce the PDF by using Visual Studio Code in combination with a Docker container or [Overleaf](https://www.overleaf.com). 
 
 # Preparing Visual Studio Code
 
