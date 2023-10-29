@@ -9,7 +9,7 @@ Follow the instructions available on the following web page.
 
 # Using the online Latex Editor Overleaf
 
-TODO: add documentation
+To import the projekt into Overleaf, you first have to download the project as a ZIP from the Github repository. This archive can get used to import it in Overleaf.
 
 # Combining Zotero and LaTex
 
