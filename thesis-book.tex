@@ -1,0 +1,74 @@
+\documentclass[11pt]{report}
+\input{general/preamble}
+\input{general/yourData}
+
+\hypersetup{
+    pdftitle={\yourThesisTitle},
+    pdfsubject={\typeOfWork},
+    pdfauthor={\yourNameInclTitle},
+    breaklinks,                 % permits line breaks for long links
+    bookmarksnumbered,          % ... and include section numbers
+    linktocpage,                % "make page number, not text, be link on TOC ..."
+    colorlinks,                 % yes ...
+    linkcolor=black,            % normal internal links;
+    anchorcolor=black,   
+    citecolor=black,
+    urlcolor=blue,              % quite common
+    pdfstartview={Fit},         % "Fit" fits the page to the window
+    pdfpagemode=UseOutlines,    % open bookmarks in Acrobat
+    plainpages=false            % avoids duplicate page number problem
+}
+
+\pagestyle{empty}
+\pagenumbering{gobble}
+
+\begin{document}
+\begin{flushleft}
+    \LARGE{\yourThesisTitle}
+\end{flushleft}
+\subsectionfont{\fontsize{13}{16}\normalfont}
+\titlespacing\subsection{0pt}{0ex}{0ex}
+\subsection*{\yourNameInclTitle}
+\vspace{-0.5em}
+\noindent{\textit{\universityCityCountry}}
+\vspace{1em}
+
+% define header appearance
+\titleformat{\chapter}{\normalfont\large}{\thechapter}{20pt}{\normalfont\large\MakeUppercase}
+\chapterfont{\fontsize{13}{16}\normalfont\MakeUppercase}
+\titlespacing\chapter{0pt}{2ex}{2ex}
+\sectionfont{\fontsize{13}{16}\normalfont}
+\titlespacing\section{0pt}{0ex}{0ex}
+\subsectionfont{\fontsize{13}{16}\normalfont}
+\titlespacing\subsection{0pt}{0ex}{0ex}
+\subsubsectionfont{\fontsize{13}{16}\normalfont}
+\titlespacing\subsection{0pt}{0ex}{0ex}
+% numbering subsubsections
+\setcounter{secnumdepth}{5}
+
+% do not start chapter on new page
+\makeatletter
+\patchcmd{\chapter}{\clearpage}{}{}{}
+\makeatother
+
+\input{chapters/00_abstract}
+\input{chapters/01_introduction}
+\input{chapters/02_relatedWork}
+\input{chapters/03_researchQuestion}
+\input{chapters/04_methodologicalApproach}
+\input{chapters/05_expectedResults}
+\input{chapters/06_conclusionAndFutureWork}
+\clearpage
+
+\titleformat{\chapter}{\normalfont\Large}{\thechapter}{20pt}{\normalfont\Large}
+
+% Add the following line if you use acronyms in your paper. The \ac command is 
+% very helpful because it makes sure that the correct formation of an acronym 
+% is used. For more details have look at manuals/acronyms.pdf.
+
+%\input{chapters/acronyms}
+
+\printbibliography[title=\thesisBookLiteratureLabel]
+
+\end{document}
+
