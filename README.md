@@ -15,5 +15,5 @@ To import the projekt into Overleaf, you first have to download the project as a
 
 [Zotero](https://www.zotero.org) is a free research assistant helping you organize you references. The Better BibTex plugin makes it easier to manage your data.
 
-[Zotero: Using Zotero with LaTeX](https://guides.library.iit.edu/c.php?g=720120&p=6296986)
+[Zotero: Using Zotero with LaTeX](https://guides.library.iit.edu/c.php?g=720120&p=6296986)  
 [https://retorque.re/zotero-better-bibtex/](Better BibTeX for Zotero)
